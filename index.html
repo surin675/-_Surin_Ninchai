@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+    <title>Admin Pro</title>
+    <link href="assets/plugins/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/perfect-scrollbar.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/colors/default.css" id="theme" rel="stylesheet">
+</head>
+
+<body class="fix-header fix-sidebar card-no-border">
+    <div class="preloader" style="display: none;">
+        <div class="loader">
+            <div class="loader__figure"></div>
+            <p class="loader__label">Admin Pro</p>
+        </div>
+    </div>
+    <div id="main-wrapper">
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md  navbar-dark bg-dark">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <b>
+                            <img src="assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                        </b>
+                        <span>
+                            <img src="assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                        </span>
+                    </a>
+                </div>
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up waves-effect waves-dark" href="javascript:void(0)"><i
+                                    class="mdi mdi-menu"></i></a> </li>
+                        <li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down waves-effect waves-dark"
+                                href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+                    </ul>
+                    <ul class="navbar-nav my-lg-0">
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item hidden-xs-down search-box"> <a class="nav-link hidden-sm-down waves-effect waves-dark"
+                                href="javascript:void(0)">
+                                <i class="mdi mdi-magnify"></i></a>
+                            <form class="app-search">
+                                <input type="text" class="form-control" placeholder="Search &amp; enter"> <a class="srh-btn"><i
+                                        class="ti-close"></i></a> </form>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-message"></i>
+                                <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right mailbox animated bounceInDown">
+                                <ul>
+                                    <li>
+                                        <div class="drop-title">Notifications</div>
+                                    </li>
+                                    <li>
+                                        <div class="message-center ps-container ps-theme-default" data-ps-id="d0eb2c45-725b-7c2c-1122-30b32ce8b17c">
+                                            <!-- Message -->
+                                            <a href="#">
+                                                <div class="btn btn-danger btn-circle"><i class="mdi mdi-link-variant"></i></div>
+                                                <div class="mail-contnet">
+                                                    <h5>Luanch Admin</h5> <span class="mail-desc">Just see the my new
+                                                        admin!</span> <span class="time">9:30 AM</span>
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="#">
+                                                <div class="btn btn-success btn-circle"><i class="mdi mdi-calendar"></i></div>
+                                                <div class="mail-contnet">
+                                                    <h5>Event today</h5> <span class="mail-desc">Just a reminder that
+                                                        you have event</span> <span class="time">9:10 AM</span>
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="#">
+                                                <div class="btn btn-info btn-circle"><i class="mdi mdi-settings"></i></div>
+                                                <div class="mail-contnet">
+                                                    <h5>Settings</h5> <span class="mail-desc">You can customize this
+                                                        template as you want</span> <span class="time">9:08 AM</span>
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="#">
+                                                <div class="btn btn-primary btn-circle"><i class="mdi mdi-account"></i></div>
+                                                <div class="mail-contnet">
+                                                    <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span>
+                                                    <span class="time">9:02 AM</span>
+                                                </div>
+                                            </a>
+                                            <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
+                                                <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                                            </div>
+                                            <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
+                                                <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="text-center pt-2">
+                                            <a href="#">
+                                                <strong>Check all notifications</strong>
+                                                <i class="mdi mdi-chevron-right"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- End Comment -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- Messages -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" id="2" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-email"></i>
+                                <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+                            </a>
+                            <div class="dropdown-menu mailbox dropdown-menu-right animated bounceInDown"
+                                aria-labelledby="2">
+                                <ul>
+                                    <li>
+                                        <div class="drop-title">You have 4 new messages</div>
+                                    </li>
+                                    <li>
+                                        <div class="message-center">
+                                            <a href="#">
+                                                <div class="user-img"> <img src="./assets/images/user/1.jpg" alt="user"
+                                                        class="img-circle"> <span class="profile-status online pull-right"></span>
+                                                </div>
+                                                <div class="mail-contnet">
+                                                    <h5>แก้ว</h5> <span class="mail-desc">ก็มาดิค้าบบบบ !!!</span>
+                                                    <span class="time">9:30 AM</span>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="user-img"> <img src="./assets/images/user/2.jpg" alt="user"
+                                                        class="img-circle"> <span class="profile-status busy pull-right"></span>
+                                                </div>
+                                                <div class="mail-contnet">
+                                                    <h5>คำ</h5> <span class="mail-desc">GG EZ </span> <span class="time">9:10
+                                                        AM</span>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="user-img"> <img src="./assets/images/user/3.jpg" alt="user"
+                                                        class="img-circle"> <span class="profile-status away pull-right"></span>
+                                                </div>
+                                                <div class="mail-contnet">
+                                                    <h5>ดำ</h5> <span class="mail-desc">GG WP</span> <span class="time">9:08
+                                                        AM</span>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="user-img"> <img src="./assets/images/user/4.jpg" alt="user"
+                                                        class="img-circle"> <span class="profile-status offline pull-right"></span>
+                                                </div>
+                                                <div class="mail-contnet">
+                                                    <h5>แดง</h5> <span class="mail-desc">อยากใส่เดี๋ยว...</span> <span
+                                                        class="time">9:02 AM</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="text-center pt-2">
+                                            <a href="#">
+                                                <strong>See all e-Mails</strong>
+                                                <i class="mdi mdi-chevron-right"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar ps-container ps-theme-default ps-active-y" data-ps-id="d47ed149-bc9d-dbc8-bd34-587b74b0b562">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav active">
+                    <ul id="sidebarnav" class="in">
+                        <li class="user-profile active"> <a class="has-arrow waves-effect waves-dark" aria-expanded="true"><img
+                                    src="./assets/images/user/profile.jpg" alt="user"><span class="hide-menu">ผมอึดนะ
+                                    พี่ไหวเหรอ </span></a>
+                            <ul aria-expanded="true" class="collapse in">
+                                <li><a href="javascript:void()">My Profile </a></li>
+                                <li><a href="javascript:void()">My Balance</a></li>
+                                <li><a href="javascript:void()">Inbox</a></li>
+                                <li><a href="javascript:void()">Account Setting</a></li>
+                                <li><a href="javascript:void()">Logout</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-devider"></li>
+                        <li class="nav-small-cap">PERSONAL</li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" aria-expanded="false">
+                                <i class="mdi mdi-gauge"></i>
+                                <span class="hide-menu">Dashboard
+                                    <span class="label label-rouded label-themecolor pull-right">4</span>
+                                </span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="#">Minimal </a></li>
+                                <li><a href="#">Analytical</a></li>
+                                <li><a href="#">Demographical</a></li>
+                                <li><a href="#">Modern</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" aria-expanded="false">
+                                <i class="mdi mdi-bullseye"></i>
+                                <span class="hide-menu">Apps</span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="#">Calendar</a></li>
+                                <li><a href="#">Chat app</a></li>
+                                <li><a href="#">Support Ticket</a></li>
+                                <li><a href="#">Contact / Employee</a></li>
+                                <li><a href="#">Contact Grid</a></li>
+                                <li><a href="#">Contact Detail</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" aria-expanded="false"><i class="mdi mdi-email"></i><span
+                                    class="hide-menu">Inbox</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="#">Mailbox</a></li>
+                                <li><a href="#">Mailbox Detail</a></li>
+                                <li><a href="#">Compose Mail</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow waves-effect waves-dark" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span
+                                    class="hide-menu">Ui Elements <span class="label label-rouded label-danger pull-right">25</span></span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="#">Cards</a></li>
+                                <li><a href="#">User Cards</a></li>
+                                <li><a href="#">Buttons</a></li>
+                                <li><a href="#">Modals</a></li>
+                                <li><a href="#">Tab</a></li>
+                                <li><a href="#">Tooltip &amp; Popover</a></li>
+                                <li><a href="#">Tooltip stylish</a></li>
+                                <li><a href="#">Sweet Alert</a></li>
+                                <li><a href="#">Notification</a></li>
+                                <li><a href="#">Progressbar</a></li>
+                                <li><a href="#">Nestable</a></li>
+                                <li><a href="#">Range slider</a></li>
+                                <li><a href="#">Timeline</a></li>
+                                <li><a href="#">Typography</a></li>
+                                <li><a href="#">Horizontal Timeline</a></li>
+                                <li><a href="#">Session Timeout</a></li>
+                                <li><a href="#">Session Ideal Timeout</a></li>
+                                <li><a href="#">Bootstrap Ui</a></li>
+                                <li><a href="#">Breadcrumb</a></li>
+                                <li><a href="#">Bootstrap Switch</a></li>
+                                <li><a href="#">List Media</a></li>
+                                <li><a href="#">Ribbons</a></li>
+                                <li><a href="#">Grid</a></li>
+                                <li><a href="#">Carousel</a></li>
+                                <li><a href="#">Date-paginator</a></li>
+                                <li><a href="#">Dragable Portlet</a></li>
+                                <li><a href="#">Scrollspy</a></li>
+                                <li><a href="#">Spinner</a></li>
+                                <li><a href="#">Toasts</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
+                    <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; height: 518px; right: 3px;">
+                    <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 280px;"></div>
+                </div>
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <div class="page-wrapper" style="min-height: 607px;">
+            <div class="container-fluid">
+                <div class="row page-titles">
+                    <div class="col-md-5 align-self-center">
+                        <h3 class="text-themecolor">Form Layout</h3>
+                    </div>
+                    <div class="col-md-7 align-self-center">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                            <li class="breadcrumb-item">Forms</li>
+                            <li class="breadcrumb-item active">Form Layout</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header bg-info">
+                                <h4 class="m-b-0 text-white">Other Sample form</h4>
+                            </div>
+                            <div class="card-body">
+                                <form action="https://wrappixel.com/demos/admin-templates/admin-pro/minimal/form-layout.html#">
+                                    <div class="form-body">
+                                        <h3 class="card-title">Person Info</h3>
+                                        <hr>
+                                        <div class="row p-t-20">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">First Name</label>
+                                                    <input type="text" id="firstName" class="form-control" placeholder="แซมซู่ซ่า">
+                                                    <small class="form-control-feedback"> This is inline help </small>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group has-danger">
+                                                    <label class="control-label">Last Name</label>
+                                                    <input type="text" id="lastName" class="form-control form-control-danger"
+                                                        placeholder="12n">
+                                                    <small class="form-control-feedback"> This field has error. </small>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group has-success">
+                                                    <label class="control-label">Gender</label>
+                                                    <select class="form-control custom-select">
+                                                        <option value="">Male</option>
+                                                        <option value="">Female</option>
+                                                    </select>
+                                                    <small class="form-control-feedback"> Select your gender </small>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Date of Birth</label>
+                                                    <input type="date" class="form-control" placeholder="dd/mm/yyyy">
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Category</label>
+                                                    <select class="form-control custom-select" data-placeholder="Choose a Category"
+                                                        tabindex="1">
+                                                        <option value="Category 1">Category 1</option>
+                                                        <option value="Category 2">Category 2</option>
+                                                        <option value="Category 3">Category 5</option>
+                                                        <option value="Category 4">Category 4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Membership</label>
+                                                    <div class="m-b-10">
+                                                        <label class="custom-control custom-radio">
+                                                            <input id="radio1" name="radio" type="radio" class="custom-control-input">
+                                                            <span class="custom-control-label">Free</span>
+                                                        </label>
+                                                        <label class="custom-control custom-radio">
+                                                            <input id="radio2" name="radio" type="radio" class="custom-control-input">
+                                                            <span class="custom-control-label">Paid</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+                                        <h3 class="box-title m-t-40">Address</h3>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-md-12 ">
+                                                <div class="form-group">
+                                                    <label>Street</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>City</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>State</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Post Code</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Country</label>
+                                                    <select class="form-control custom-select">
+                                                        <option>--Select your Country--</option>
+                                                        <option>India</option>
+                                                        <option>Sri Lanka</option>
+                                                        <option>USA</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                    </div>
+                                    <div class="form-actions">
+                                        <button type="submit" class="btn btn-success"> <i class="mdi mdi-check"></i>
+                                            Save</button>
+                                        <button type="button" class="btn btn-inverse">Cancel</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row -->
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card ">
+                            <div class="card-header bg-info">
+                                <h4 class="m-b-0 text-white">Other Sample Horizontal form</h4>
+                            </div>
+                            <div class="card-body">
+                                <form action="https://wrappixel.com/demos/admin-templates/admin-pro/minimal/form-layout.html#"
+                                    class="form-horizontal">
+                                    <div class="form-body">
+                                        <h3 class="box-title">Person Info</h3>
+                                        <hr class="m-t-0 m-b-40">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3">First Name</label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" class="form-control" placeholder="John doe">
+                                                        <small class="form-control-feedback"> This is inline help
+                                                        </small> </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group has-danger row">
+                                                    <label class="control-label text-right col-md-3">Last Name</label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" class="form-control form-control-danger"
+                                                            placeholder="12n">
+                                                        <small class="form-control-feedback"> This field has error.
+                                                        </small> </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3">Gender</label>
+                                                    <div class="col-md-9">
+                                                        <select class="form-control custom-select">
+                                                            <option value="">Male</option>
+                                                            <option value="">Female</option>
+                                                        </select>
+                                                        <small class="form-control-feedback"> Select your gender.
+                                                        </small> </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3">Date of Birth</label>
+                                                    <div class="col-md-9">
+                                                        <input type="date" class="form-control" placeholder="dd/mm/yyyy">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3">Category</label>
+                                                    <div class="col-md-9">
+                                                        <select class="form-control custom-select" data-placeholder="Choose a Category"
+                                                            tabindex="1">
+                                                            <option value="Category 1">Category 1</option>
+                                                            <option value="Category 2">Category 2</option>
+                                                            <option value="Category 3">Category 5</option>
+                                                            <option value="Category 4">Category 4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3">Membership</label>
+                                                    <div class="col-md-9">
+                                                        <div class="m-b-10">
+                                                            <label class="custom-control custom-radio">
+                                                                <input id="radio3" name="radio" type="radio" class="custom-control-input">
+                                                                <span class="custom-control-label">Free</span>
+                                                            </label>
+                                                            <label class="custom-control custom-radio">
+                                                                <input id="radio4" name="radio" type="radio" class="custom-control-input">
+                                                                <span class="custom-control-label">Paid</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <h3 class="box-title">Address</h3>
+                                        <hr class="m-t-0 m-b-40">
+                                        <!--/row-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3">Address 1</label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3">Address 2</label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3">City</label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3">State</label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3">Post Code</label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="control-label text-right col-md-3">Country</label>
+                                                    <div class="col-md-9">
+                                                        <select class="form-control custom-select">
+                                                            <option>Country 1</option>
+                                                            <option>Country 2</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+                                    </div>
+                                    <hr>
+                                    <div class="form-actions">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <div class="col-md-offset-3 col-md-9">
+                                                        <button type="submit" class="btn btn-success">Submit</button>
+                                                        <button type="button" class="btn btn-inverse">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6"> </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">Footer</footer>
+        </div>
+    </div>
+
+    <script src="assets/plugins/jquery/dist/jquery.min.js"></script>
+    <script src="assets/plugins/bootstrap/dist/js/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/perfect-scrollbar.jquery.js"></script>
+    <script src="assets/js/sidebarmenu.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+
+
+    <div class="jvectormap-tip"></div>
+</body>
+
+</html>

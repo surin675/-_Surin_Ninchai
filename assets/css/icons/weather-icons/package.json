@@ -1,0 +1,48 @@
+{
+  "_from": "weather-icons-npm",
+  "_id": "weather-icons-npm@10.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-hhwDVMcTlmLmiBa+AOMMo79yZXBCH/arcK/3nzQyVPNxZfJ8DEeQ6grNRf9lHkvcjm+ZiFRK8pyvM/38aDfszg==",
+  "_location": "/weather-icons-npm",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "weather-icons-npm",
+    "name": "weather-icons-npm",
+    "escapedName": "weather-icons-npm",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/weather-icons-npm/-/weather-icons-npm-10.0.0.tgz",
+  "_shasum": "b36f0402c877efec09c4bfd5d52fc087576e5042",
+  "_spec": "weather-icons-npm",
+  "_where": "E:\\testPrefileFrom\\assets\\custom\\css\\icon",
+  "author": "",
+  "authors": [
+    "Erik Flowers <erik@helloerik.com>"
+  ],
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "222 weather themed icons inspired by Font Awesome and ready for Bootstrap",
+  "devDependencies": {},
+  "homepage": "http://erikflowers.github.io/weather-icons/",
+  "keywords": [
+    "css",
+    "icon-font",
+    "weather",
+    "icon",
+    "icons"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "weather-icons-npm",
+  "scripts": {},
+  "version": "10.0.0"
+}
